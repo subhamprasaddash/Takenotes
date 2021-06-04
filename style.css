@@ -1,0 +1,21 @@
+.navfont{
+	font-size: 25px;
+}
+.btn-outline-success{
+	background-color: #20c997;
+}
+.container{
+	background-image: url('stas-parechyn-Xa2ICcPqUew-unsplash.jpg');
+	background-size: cover;
+}
+.background{
+	background-image: url('hoodh-ahmed-GrQO3IciUTk-unsplash.jpg');
+}
+.card{
+	background-color: lightyellow;
+	opacity: 80%;
+}
+.card1{
+	background-color:  white;
+	opacity: 80%;
+}
