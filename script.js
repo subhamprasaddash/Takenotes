@@ -76,21 +76,12 @@ search.addEventListener("input",function(){
 	var noteCards= document.getElementsByClassName("noteCard");
 	Array.from(noteCards).forEach(function(element){
 		var cardTxt = element.getElementsByTagName("p")[0].innerText;
-		if(cardTxt.includes(inputValue)){
+		var cardTitle = element.getElementsByTagName("h5")[0].innerText;
+		if(cardTxt.includes(inputValue) || cardTitle.includes(inputValue)){
 			element.style.display= "block";
 		}
 		else{
 			element.style.display = "none";
 		}
-	Array.from(noteCards).forEach(function(element){
-		var cardTxt = element.getElementsByTagName("h5")[0].innerText;
-		if(cardTxt.includes(inputValue)) {
-			element.style.display= "block";
-		}
-		else{
-			element.style.display = "none";
-		}
-	});
-	
-});
+		});
 });
